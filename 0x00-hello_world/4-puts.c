@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main -Using puts function to print
- * Reteun: 0 
+ * Return: 0 (thorough0)
  */
 int main(void)
 {
