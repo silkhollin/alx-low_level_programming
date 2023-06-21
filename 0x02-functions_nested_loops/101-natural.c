@@ -2,7 +2,7 @@
 
 
 /*
- * main for printing all numbers less than 1024
+ * main -  for printing all numbers less than 1024
  * must be multiples of 3 and 5
  * Return: 0 nga bulijjo
  */
@@ -15,7 +15,6 @@ int main(void)
 	{
 		if ((i % 3) == 0 || (i % 5) == 0)
 			sum = sum + i;
-	
 	}
 	printf("%d\n", sum);
 
