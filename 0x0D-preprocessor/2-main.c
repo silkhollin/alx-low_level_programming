@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/*
+/**
  * main - generates file name
  *
- * Return: all time  0 (success)
+ * Return: All time 0 (success)
  */
 
 int main(void)
