@@ -2,13 +2,15 @@
 #define LISTS_H
 
 /**
- * list_c - singly linked list
- * @str: string with allocated memory
- * @len: lenght of the string
+ * struct list_c - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
  * @next: points to the next node
  *
  * Description: singly linked list node structure
+ * for first dsa  project
  */
+
 typedef struct list_c
 {
 	char *str;
