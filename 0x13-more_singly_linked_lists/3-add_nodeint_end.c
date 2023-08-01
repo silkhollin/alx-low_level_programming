@@ -6,6 +6,8 @@
  * @n: data to create new node
  *
  * Return: pointer to the new node, or Null if it doesnt work
+ *
+ * Description - adds node at the end
  */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
@@ -15,7 +17,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 	new = malloc(sizeof(listint_t));
 
-	if (new == NULL)
+	if (!new)
 		return (NULL);
 
 	new->n = n;
@@ -29,6 +31,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 	while (temp->next)
 		temp = temp->next;
+
 	temp->next = new;
 
 	return (new);
