@@ -14,11 +14,10 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 
 	if (!text_content)
-	{
 		text_content = "";
-		for (num = 0; text_content[num];)
-			num++;
-	}
+	for (num = 0; text_content[num]; num++)
+		;
+
 	fo = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	if (fo == -1)
 		return (-1);
